@@ -1,0 +1,61 @@
+
+Gets a reference to the <canvas> element.
+Obtains a webgl2 rendering context from the canvas, to interact with the WebGL API.
+Creates a WebGL program object.
+
+Creates vertex and fragment shader objects.
+
+
+
+
+Compiles the provided shader source code.
+Attaches the shaders to the program.
+
+
+
+Links the program to make it ready for use.
+
+Error Checking: Checks if there were any errors during shader compilation
+and logs them to the console if found.
+
+
+Uniforms are shader variables used to pass data. 
+
+getUniformLocation retrieves the locations within the shader program for the 
+model, view, and project uniforms.
+
+gl.uniformMatrix4fv calculates view and projection matrices which are sent
+to their respective uniforms.
+
+
+
+
+
+
+
+
+
+
+A vertex buffer object is created (vertexBuffer) to store vertex data.
+The buffer is bound to the ARRAY_BUFFER target.
+
+The vertexData array (position and texture coordinates) is loaded into the bound buffer.
+gl.vertexAttribPointer defines how to pull data out of the buffer for
+p and uv attributes in the vertex shader.
+The p and uv attributes are enabled.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
